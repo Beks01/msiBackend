@@ -1,6 +1,6 @@
 package com.example.msiproject.dto;
 
-import com.example.msiproject.model.enums.Role;
+import com.example.msiproject.model.enums.Roles;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -14,8 +14,7 @@ public class UserDTO {
     private String lastName;
     private String login;
     private String password;
-    private boolean otpUsed;
-    private Role role;
+    private Roles role;
     private String phoneNumber;
     private String email;
 

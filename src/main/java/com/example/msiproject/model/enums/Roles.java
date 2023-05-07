@@ -1,6 +1,6 @@
 package com.example.msiproject.model.enums;
 
-public enum Role {
+public enum Roles {
     PATIENT,
     ADMIN,
     DOCTOR

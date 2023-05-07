@@ -1,6 +1,5 @@
 package com.example.msiproject.model;
 
-import com.example.msiproject.model.enums.Role;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;

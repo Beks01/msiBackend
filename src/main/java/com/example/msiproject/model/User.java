@@ -1,11 +1,13 @@
 package com.example.msiproject.model;
 
-import com.example.msiproject.model.enums.Role;
+import com.example.msiproject.model.enums.Roles;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
+import java.util.HashSet;
+import java.util.Set;
 
 @NoArgsConstructor
 @AllArgsConstructor
@@ -31,12 +33,8 @@ public class User {
     @Column(name = "password")
     private String password;
 
-    @Column(name = "otpUsed")
-    private boolean otpUsed;
-
     @Column(name = "role")
-    @Enumerated(EnumType.STRING)
-    private Role role;
+    private Roles role;
 
     @Column(name = "phoneNumber")
     private String phoneNumber;
@@ -52,4 +50,7 @@ public class User {
 
     @OneToOne(mappedBy = "user")
     private Admin admin;
+
+
+
 }
